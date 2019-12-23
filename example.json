@@ -1,0 +1,41 @@
+{
+  "example1": [
+    "Title:Atm Transaction Sequence Diagram",
+    "user->atm:card insert",
+    "atm-->user:enter your pin code",
+    "user->atm:pin code send",
+    "atm->bank:check this details"
+  ],
+  "example2": [
+    "Title:Website Signup System",
+    "Guest->GUI:request sign up form",
+    "GUI->Application:signUpPage()",
+    "Application-->GUI:signUpPage",
+    "GUI-->Guest:sign up page",
+    "Guest->GUI:send sign up form",
+    "GUI->Application:requestSignUp()",
+    "Application->Database:createUser(email,pass)",
+    "Database->Application:user is created",
+    "Application-->GUI:usercreated()",
+    "GUI-->Guest:usercreated(),homepage()"
+  ],
+  "example3": [
+    "Title:Search Book",
+    "Customer->searchPage:onSearch(author)",
+    "searchPage->searchPage:validationSearchCriteria()",
+    "searchPage->catalog:searchByAuthor(author)",
+    "catalog->searchResult:create()",
+    "searchResult->searchPage:display()"
+  ],
+  "example4": [
+    "Title:example 4",
+    "one->two:hello",
+    "two-->one:hi",
+    "three->four:whasspp",
+    "four-->one:suppp",
+    "one->four:wrong person",
+    "four-->one:ooh sorry",
+    "four-->three:yoyoyo",
+    "three->four:lorem lorem lorem lorem lorem "
+  ]
+}

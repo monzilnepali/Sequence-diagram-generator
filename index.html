@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text-to-sequence-diagram</title>
+  <!-- font -->
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="wrapper-left" id="editor-container">
+      <div class="wrapper-left-heading">
+        <div class="left-header-section">
+          <p class="title">Text-to-sequence-diagram</p>
+          <ul>
+            <li class="example" data-id="1">example1</li>
+            <li class="example" data-id="2">example2</li>
+            <li class="example" data-id="3">example3</li>
+            <li class="example" data-id="4">example4</li>
+          </ul>
+        </div>
+        <div class="right-header-section">
+          <div class="rotateBtn" id="rotateBtn" data-id="0">
+            <img src="./img/orientation.png">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wrapper-left-footer">
+        <div id="lineInfo">Ln <span id="line">1</span>,Col <span id="col">1</span></div>
+        <span id="errorMsg"></span>
+      </div>
+    </div>
+    <div class="wrapper-right" id="wrapper-right">
+      <canvas id="app"></canvas>
+      <a href="#" class="saveButton" id="saveBtn">save</a>
+    </div>
+
+  </div>
+
+
+
+  <script src="./js/Signal.js"></script>
+  <script src="./js/Actor.js"></script>
+  <script src="./js/Title.js"></script>
+  <script src="./js/Diagram.js"></script>
+  <script src="./js/parser.js"></script>
+  <script src="./js/InputStream.js"></script>
+  <script src="./js/ValidationError.js"></script>
+  <script src="./js/Lexer.js"></script>
+  <script src="./js/Editor.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
