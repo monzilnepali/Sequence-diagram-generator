@@ -1,1 +1,1 @@
-# text-to-sequence-diagram-generator
+# Sequence Diagram Generator
